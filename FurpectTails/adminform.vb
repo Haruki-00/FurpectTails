@@ -1,0 +1,31 @@
+﻿Imports Microsoft.VisualBasic.Logging
+
+Public Class adminform
+    Private Sub logout_Click(sender As Object, e As EventArgs) Handles logout.Click
+        Dim result As DialogResult =
+        MessageBox.Show("Are you sure you want to log out?",
+            "Confirm Log Out",
+        MessageBoxButtons.YesNo,
+        MessageBoxIcon.Question)
+
+        If result = DialogResult.Yes Then
+            Me.Close()
+            loginform.Show()
+        End If
+    End Sub
+
+    Sub switchPanel(panel As Form)
+        Panel6.Controls.Clear()
+        panel.TopLevel = False
+        Panel6.Controls.Add(panel)
+        panel.Show()
+    End Sub
+
+    Private Sub Prod_Click(sender As Object, e As EventArgs) Handles Prod.Click
+        switchPanel(productform)
+    End Sub
+
+    Private Sub clndr_Click(sender As Object, e As EventArgs) Handles clndr.Click
+        switchPanel(scheduleform)
+    End Sub
+End Class
