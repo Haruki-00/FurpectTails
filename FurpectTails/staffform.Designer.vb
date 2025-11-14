@@ -23,15 +23,9 @@ Partial Class staffform
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel5 = New Panel()
-        Button11 = New Button()
         Prod = New Button()
-        rprt = New Button()
-        Button10 = New Button()
-        billing = New Button()
-        Manserv = New Button()
-        manroom = New Button()
+        report = New Button()
         pethot = New Button()
-        petprof = New Button()
         clientprof = New Button()
         clndr = New Button()
         logout = New Button()
@@ -53,20 +47,6 @@ Partial Class staffform
         Panel5.Size = New Size(168, 1)
         Panel5.TabIndex = 3
         ' 
-        ' Button11
-        ' 
-        Button11.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Button11.FlatAppearance.BorderSize = 0
-        Button11.FlatStyle = FlatStyle.Flat
-        Button11.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        Button11.ForeColor = Color.Black
-        Button11.Location = New Point(0, 528)
-        Button11.Name = "Button11"
-        Button11.Size = New Size(168, 48)
-        Button11.TabIndex = 14
-        Button11.Text = "Log Out"
-        Button11.UseVisualStyleBackColor = False
-        ' 
         ' Prod
         ' 
         Prod.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
@@ -74,82 +54,26 @@ Partial Class staffform
         Prod.FlatStyle = FlatStyle.Flat
         Prod.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         Prod.ForeColor = Color.Black
-        Prod.Location = New Point(0, 240)
+        Prod.Location = New Point(0, 192)
         Prod.Name = "Prod"
         Prod.Size = New Size(168, 48)
         Prod.TabIndex = 12
         Prod.Text = "Product"
         Prod.UseVisualStyleBackColor = False
         ' 
-        ' rprt
+        ' report
         ' 
-        rprt.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        rprt.FlatAppearance.BorderSize = 0
-        rprt.FlatStyle = FlatStyle.Flat
-        rprt.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        rprt.ForeColor = Color.Black
-        rprt.Location = New Point(0, 432)
-        rprt.Name = "rprt"
-        rprt.Size = New Size(168, 48)
-        rprt.TabIndex = 9
-        rprt.Text = "Report"
-        rprt.UseVisualStyleBackColor = False
-        ' 
-        ' Button10
-        ' 
-        Button10.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Button10.FlatAppearance.BorderSize = 0
-        Button10.FlatStyle = FlatStyle.Flat
-        Button10.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        Button10.ForeColor = Color.Black
-        Button10.Location = New Point(0, 480)
-        Button10.Name = "Button10"
-        Button10.Size = New Size(168, 48)
-        Button10.TabIndex = 13
-        Button10.Text = "Log Out"
-        Button10.UseVisualStyleBackColor = False
-        ' 
-        ' billing
-        ' 
-        billing.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        billing.FlatAppearance.BorderSize = 0
-        billing.FlatStyle = FlatStyle.Flat
-        billing.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        billing.ForeColor = Color.Black
-        billing.Location = New Point(0, 384)
-        billing.Name = "billing"
-        billing.Size = New Size(168, 48)
-        billing.TabIndex = 8
-        billing.Text = "Billing Statement"
-        billing.UseVisualStyleBackColor = False
-        ' 
-        ' Manserv
-        ' 
-        Manserv.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Manserv.FlatAppearance.BorderSize = 0
-        Manserv.FlatStyle = FlatStyle.Flat
-        Manserv.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        Manserv.ForeColor = Color.Black
-        Manserv.Location = New Point(0, 336)
-        Manserv.Name = "Manserv"
-        Manserv.Size = New Size(168, 48)
-        Manserv.TabIndex = 11
-        Manserv.Text = "Manage Service"
-        Manserv.UseVisualStyleBackColor = False
-        ' 
-        ' manroom
-        ' 
-        manroom.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        manroom.FlatAppearance.BorderSize = 0
-        manroom.FlatStyle = FlatStyle.Flat
-        manroom.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        manroom.ForeColor = Color.Black
-        manroom.Location = New Point(0, 288)
-        manroom.Name = "manroom"
-        manroom.Size = New Size(168, 48)
-        manroom.TabIndex = 10
-        manroom.Text = "Manage Rooms"
-        manroom.UseVisualStyleBackColor = False
+        report.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
+        report.FlatAppearance.BorderSize = 0
+        report.FlatStyle = FlatStyle.Flat
+        report.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
+        report.ForeColor = Color.Black
+        report.Location = New Point(0, 240)
+        report.Name = "report"
+        report.Size = New Size(168, 48)
+        report.TabIndex = 8
+        report.Text = "Reports"
+        report.UseVisualStyleBackColor = False
         ' 
         ' pethot
         ' 
@@ -158,26 +82,12 @@ Partial Class staffform
         pethot.FlatStyle = FlatStyle.Flat
         pethot.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         pethot.ForeColor = Color.Black
-        pethot.Location = New Point(0, 192)
+        pethot.Location = New Point(0, 144)
         pethot.Name = "pethot"
         pethot.Size = New Size(168, 48)
         pethot.TabIndex = 7
         pethot.Text = "Pet Hotel"
         pethot.UseVisualStyleBackColor = False
-        ' 
-        ' petprof
-        ' 
-        petprof.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        petprof.FlatAppearance.BorderSize = 0
-        petprof.FlatStyle = FlatStyle.Flat
-        petprof.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        petprof.ForeColor = Color.Black
-        petprof.Location = New Point(0, 144)
-        petprof.Name = "petprof"
-        petprof.Size = New Size(168, 48)
-        petprof.TabIndex = 6
-        petprof.Text = "Pet Profile"
-        petprof.UseVisualStyleBackColor = False
         ' 
         ' clientprof
         ' 
@@ -214,7 +124,7 @@ Partial Class staffform
         logout.FlatStyle = FlatStyle.Flat
         logout.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         logout.ForeColor = Color.Black
-        logout.Location = New Point(0, 576)
+        logout.Location = New Point(0, 288)
         logout.Name = "logout"
         logout.Size = New Size(168, 48)
         logout.TabIndex = 2
@@ -234,11 +144,11 @@ Partial Class staffform
         Label1.AutoSize = True
         Label1.Font = New Font("Calibri", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
         Label1.ForeColor = Color.Black
-        Label1.Location = New Point(56, 16)
+        Label1.Location = New Point(64, 16)
         Label1.Name = "Label1"
-        Label1.Size = New Size(46, 15)
+        Label1.Size = New Size(38, 15)
         Label1.TabIndex = 2
-        Label1.Text = "ADMIN"
+        Label1.Text = "STAFF"
         ' 
         ' Panel3
         ' 
@@ -261,15 +171,9 @@ Partial Class staffform
         ' 
         Panel2.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
         Panel2.Controls.Add(Panel5)
-        Panel2.Controls.Add(Button11)
         Panel2.Controls.Add(Prod)
-        Panel2.Controls.Add(rprt)
-        Panel2.Controls.Add(Button10)
-        Panel2.Controls.Add(billing)
-        Panel2.Controls.Add(Manserv)
-        Panel2.Controls.Add(manroom)
+        Panel2.Controls.Add(report)
         Panel2.Controls.Add(pethot)
-        Panel2.Controls.Add(petprof)
         Panel2.Controls.Add(clientprof)
         Panel2.Controls.Add(clndr)
         Panel2.Controls.Add(logout)
@@ -307,15 +211,9 @@ Partial Class staffform
     End Sub
 
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Button11 As Button
     Friend WithEvents Prod As Button
-    Friend WithEvents rprt As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents billing As Button
-    Friend WithEvents Manserv As Button
-    Friend WithEvents manroom As Button
+    Friend WithEvents report As Button
     Friend WithEvents pethot As Button
-    Friend WithEvents petprof As Button
     Friend WithEvents clientprof As Button
     Friend WithEvents clndr As Button
     Friend WithEvents logout As Button

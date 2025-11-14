@@ -25,18 +25,17 @@ Partial Class adminform
         Panel1 = New Panel()
         Panel3 = New Panel()
         Panel2 = New Panel()
-        Panel5 = New Panel()
+        Button1 = New Button()
+        Panel7 = New Panel()
         Prod = New Button()
         billing = New Button()
         Manserv = New Button()
         manroom = New Button()
-        pethot = New Button()
         petprof = New Button()
         clientprof = New Button()
         clndr = New Button()
         logout = New Button()
         Panel4 = New Panel()
-        Label1 = New Label()
         Panel6 = New Panel()
         Panel1.SuspendLayout()
         Panel2.SuspendLayout()
@@ -62,40 +61,56 @@ Partial Class adminform
         ' 
         ' Panel2
         ' 
-        Panel2.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Panel2.Controls.Add(Panel5)
+        Panel2.BackColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        Panel2.Controls.Add(Button1)
+        Panel2.Controls.Add(Panel7)
         Panel2.Controls.Add(Prod)
         Panel2.Controls.Add(billing)
         Panel2.Controls.Add(Manserv)
         Panel2.Controls.Add(manroom)
-        Panel2.Controls.Add(pethot)
         Panel2.Controls.Add(petprof)
         Panel2.Controls.Add(clientprof)
         Panel2.Controls.Add(clndr)
         Panel2.Controls.Add(logout)
         Panel2.Controls.Add(Panel4)
-        Panel2.Controls.Add(Label1)
         Panel2.Location = New Point(0, 56)
         Panel2.Name = "Panel2"
         Panel2.Size = New Size(168, 712)
         Panel2.TabIndex = 1
         ' 
-        ' Panel5
+        ' Button1
         ' 
-        Panel5.BackColor = SystemColors.ButtonFace
-        Panel5.Location = New Point(0, 48)
-        Panel5.Name = "Panel5"
-        Panel5.Size = New Size(168, 1)
-        Panel5.TabIndex = 3
+        Button1.BackColor = Color.FromArgb(CByte(250), CByte(199), CByte(217))
+        Button1.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        Button1.FlatAppearance.BorderSize = 2
+        Button1.FlatStyle = FlatStyle.Flat
+        Button1.Font = New Font("Lucida Sans", 12F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
+        Button1.ForeColor = Color.Black
+        Button1.Location = New Point(0, 0)
+        Button1.Name = "Button1"
+        Button1.Size = New Size(168, 48)
+        Button1.TabIndex = 13
+        Button1.Text = "ADMIN"
+        Button1.UseVisualStyleBackColor = False
+        ' 
+        ' Panel7
+        ' 
+        Panel7.BackgroundImage = My.Resources.Resources._111bb3d1317b89e95b046d1cdcce1a39b9eba825
+        Panel7.BackgroundImageLayout = ImageLayout.Stretch
+        Panel7.Location = New Point(0, 448)
+        Panel7.Name = "Panel7"
+        Panel7.Size = New Size(168, 168)
+        Panel7.TabIndex = 0
         ' 
         ' Prod
         ' 
         Prod.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Prod.FlatAppearance.BorderSize = 0
+        Prod.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        Prod.FlatAppearance.BorderSize = 2
         Prod.FlatStyle = FlatStyle.Flat
         Prod.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         Prod.ForeColor = Color.Black
-        Prod.Location = New Point(0, 240)
+        Prod.Location = New Point(0, 192)
         Prod.Name = "Prod"
         Prod.Size = New Size(168, 48)
         Prod.TabIndex = 12
@@ -105,25 +120,27 @@ Partial Class adminform
         ' billing
         ' 
         billing.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        billing.FlatAppearance.BorderSize = 0
+        billing.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        billing.FlatAppearance.BorderSize = 2
         billing.FlatStyle = FlatStyle.Flat
         billing.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         billing.ForeColor = Color.Black
-        billing.Location = New Point(0, 384)
+        billing.Location = New Point(0, 336)
         billing.Name = "billing"
         billing.Size = New Size(168, 48)
         billing.TabIndex = 8
-        billing.Text = "Billing Statement"
+        billing.Text = "Reports"
         billing.UseVisualStyleBackColor = False
         ' 
         ' Manserv
         ' 
         Manserv.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        Manserv.FlatAppearance.BorderSize = 0
+        Manserv.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        Manserv.FlatAppearance.BorderSize = 2
         Manserv.FlatStyle = FlatStyle.Flat
         Manserv.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         Manserv.ForeColor = Color.Black
-        Manserv.Location = New Point(0, 336)
+        Manserv.Location = New Point(0, 288)
         Manserv.Name = "Manserv"
         Manserv.Size = New Size(168, 48)
         Manserv.TabIndex = 11
@@ -133,35 +150,23 @@ Partial Class adminform
         ' manroom
         ' 
         manroom.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        manroom.FlatAppearance.BorderSize = 0
+        manroom.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        manroom.FlatAppearance.BorderSize = 2
         manroom.FlatStyle = FlatStyle.Flat
         manroom.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         manroom.ForeColor = Color.Black
-        manroom.Location = New Point(0, 288)
+        manroom.Location = New Point(0, 240)
         manroom.Name = "manroom"
         manroom.Size = New Size(168, 48)
         manroom.TabIndex = 10
         manroom.Text = "Manage Rooms"
         manroom.UseVisualStyleBackColor = False
         ' 
-        ' pethot
-        ' 
-        pethot.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        pethot.FlatAppearance.BorderSize = 0
-        pethot.FlatStyle = FlatStyle.Flat
-        pethot.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
-        pethot.ForeColor = Color.Black
-        pethot.Location = New Point(0, 192)
-        pethot.Name = "pethot"
-        pethot.Size = New Size(168, 48)
-        pethot.TabIndex = 7
-        pethot.Text = "Pet Hotel"
-        pethot.UseVisualStyleBackColor = False
-        ' 
         ' petprof
         ' 
         petprof.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        petprof.FlatAppearance.BorderSize = 0
+        petprof.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        petprof.FlatAppearance.BorderSize = 2
         petprof.FlatStyle = FlatStyle.Flat
         petprof.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         petprof.ForeColor = Color.Black
@@ -175,7 +180,8 @@ Partial Class adminform
         ' clientprof
         ' 
         clientprof.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        clientprof.FlatAppearance.BorderSize = 0
+        clientprof.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        clientprof.FlatAppearance.BorderSize = 2
         clientprof.FlatStyle = FlatStyle.Flat
         clientprof.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         clientprof.ForeColor = Color.Black
@@ -189,7 +195,8 @@ Partial Class adminform
         ' clndr
         ' 
         clndr.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
-        clndr.FlatAppearance.BorderSize = 0
+        clndr.FlatAppearance.BorderColor = Color.FromArgb(CByte(255), CByte(229), CByte(239))
+        clndr.FlatAppearance.BorderSize = 2
         clndr.FlatStyle = FlatStyle.Flat
         clndr.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
         clndr.ForeColor = Color.Black
@@ -202,14 +209,14 @@ Partial Class adminform
         ' 
         ' logout
         ' 
-        logout.BackColor = Color.FromArgb(CByte(255), CByte(165), CByte(200))
+        logout.BackColor = Color.FromArgb(CByte(250), CByte(199), CByte(217))
         logout.FlatAppearance.BorderSize = 0
         logout.FlatStyle = FlatStyle.Flat
-        logout.Font = New Font("Lucida Sans", 12.75F, FontStyle.Bold)
+        logout.Font = New Font("Lucida Sans", 12F, FontStyle.Bold Or FontStyle.Underline, GraphicsUnit.Point, CByte(0))
         logout.ForeColor = Color.Black
-        logout.Location = New Point(0, 432)
+        logout.Location = New Point(0, 672)
         logout.Name = "logout"
-        logout.Size = New Size(168, 48)
+        logout.Size = New Size(168, 40)
         logout.TabIndex = 2
         logout.Text = "Log Out"
         logout.UseVisualStyleBackColor = False
@@ -221,17 +228,6 @@ Partial Class adminform
         Panel4.Name = "Panel4"
         Panel4.Size = New Size(168, 1)
         Panel4.TabIndex = 2
-        ' 
-        ' Label1
-        ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Calibri", 9.75F, FontStyle.Bold, GraphicsUnit.Point, CByte(0))
-        Label1.ForeColor = Color.Black
-        Label1.Location = New Point(56, 16)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(46, 15)
-        Label1.TabIndex = 2
-        Label1.Text = "ADMIN"
         ' 
         ' Panel6
         ' 
@@ -254,24 +250,22 @@ Partial Class adminform
         Text = "adminform"
         Panel1.ResumeLayout(False)
         Panel2.ResumeLayout(False)
-        Panel2.PerformLayout()
         ResumeLayout(False)
     End Sub
 
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel2 As Panel
-    Friend WithEvents Label1 As Label
     Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
     Friend WithEvents logout As Button
     Friend WithEvents Prod As Button
     Friend WithEvents Manserv As Button
     Friend WithEvents manroom As Button
     Friend WithEvents billing As Button
-    Friend WithEvents pethot As Button
     Friend WithEvents petprof As Button
     Friend WithEvents clientprof As Button
     Friend WithEvents clndr As Button
     Friend WithEvents Panel6 As Panel
+    Friend WithEvents Panel7 As Panel
+    Friend WithEvents Button1 As Button
 End Class

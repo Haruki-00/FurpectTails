@@ -29,12 +29,16 @@ Public Class loginform
                     Dim f As New adminform()
                     f.Show()
                     Me.Hide()
+                    txtPassword.Clear()
+                    txtUsername.Clear()
 
                 ElseIf role = "Staff" Then
                     MessageBox.Show("Welcome Staff!")
                     Dim f As New staffform()
                     f.Show()
                     Me.Hide()
+                    txtPassword.Clear()
+                    txtUsername.Clear()
 
                 Else
                     MessageBox.Show("Unknown Role")
@@ -42,6 +46,8 @@ Public Class loginform
 
             Else
                 MessageBox.Show("Invalid Username or Password.")
+                txtPassword.Clear()
+                txtUsername.Clear()
             End If
 
         Catch ex As Exception
@@ -51,10 +57,6 @@ Public Class loginform
                 con.Close()
             End If
         End Try
-    End Sub
-
-    Private Sub txtUsername_TextChanged(sender As Object, e As EventArgs) Handles txtUsername.TextChanged
-
     End Sub
 
     Private Sub rstpassbttn_Click(sender As Object, e As EventArgs) Handles rstpassbttn.Click

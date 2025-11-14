@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class scheduleform
+Partial Class admincalendarform
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,6 +23,10 @@ Partial Class scheduleform
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Panel1 = New Panel()
+        MonthCalendar1 = New MonthCalendar()
+        clndrbtn = New Button()
+        refbtn = New Button()
+        taskpnl = New Panel()
         monthlbl = New Label()
         pnlcalendar = New Panel()
         Panel35 = New Panel()
@@ -124,6 +128,7 @@ Partial Class scheduleform
         Label50 = New Label()
         prvbttn = New Button()
         nxtbttn = New Button()
+        Panel1.SuspendLayout()
         pnlcalendar.SuspendLayout()
         Panel35.SuspendLayout()
         Panel36.SuspendLayout()
@@ -171,11 +176,56 @@ Partial Class scheduleform
         ' 
         ' Panel1
         ' 
+        Panel1.AutoSize = True
         Panel1.BackColor = SystemColors.ActiveBorder
+        Panel1.Controls.Add(MonthCalendar1)
+        Panel1.Controls.Add(clndrbtn)
+        Panel1.Controls.Add(refbtn)
+        Panel1.Controls.Add(taskpnl)
         Panel1.Location = New Point(920, 0)
         Panel1.Name = "Panel1"
-        Panel1.Size = New Size(280, 712)
+        Panel1.Size = New Size(285, 716)
         Panel1.TabIndex = 0
+        ' 
+        ' MonthCalendar1
+        ' 
+        MonthCalendar1.Location = New Point(26, 41)
+        MonthCalendar1.MaxSelectionCount = 1
+        MonthCalendar1.Name = "MonthCalendar1"
+        MonthCalendar1.TabIndex = 49
+        MonthCalendar1.Visible = False
+        ' 
+        ' clndrbtn
+        ' 
+        clndrbtn.BackColor = Color.Transparent
+        clndrbtn.BackgroundImage = My.Resources.Resources.pngegg
+        clndrbtn.BackgroundImageLayout = ImageLayout.Zoom
+        clndrbtn.FlatStyle = FlatStyle.Flat
+        clndrbtn.Font = New Font("Segoe UI", 30F)
+        clndrbtn.Location = New Point(141, 2)
+        clndrbtn.Name = "clndrbtn"
+        clndrbtn.Size = New Size(137, 71)
+        clndrbtn.TabIndex = 4
+        clndrbtn.UseVisualStyleBackColor = False
+        ' 
+        ' refbtn
+        ' 
+        refbtn.Font = New Font("Segoe UI", 30F)
+        refbtn.Location = New Point(3, 2)
+        refbtn.Name = "refbtn"
+        refbtn.Size = New Size(137, 71)
+        refbtn.TabIndex = 3
+        refbtn.Text = "REFRESH"
+        refbtn.UseVisualStyleBackColor = True
+        ' 
+        ' taskpnl
+        ' 
+        taskpnl.AutoScroll = True
+        taskpnl.BorderStyle = BorderStyle.FixedSingle
+        taskpnl.Location = New Point(2, 74)
+        taskpnl.Name = "taskpnl"
+        taskpnl.Size = New Size(277, 639)
+        taskpnl.TabIndex = 2
         ' 
         ' monthlbl
         ' 
@@ -1131,7 +1181,7 @@ Partial Class scheduleform
         nxtbttn.Text = "Next"
         nxtbttn.UseVisualStyleBackColor = True
         ' 
-        ' scheduleform
+        ' admincalendarform
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -1149,8 +1199,9 @@ Partial Class scheduleform
         Controls.Add(pnlcalendar)
         Controls.Add(Panel1)
         FormBorderStyle = FormBorderStyle.None
-        Name = "scheduleform"
+        Name = "admincalendarform"
         Text = "scheduleform"
+        Panel1.ResumeLayout(False)
         pnlcalendar.ResumeLayout(False)
         Panel35.ResumeLayout(False)
         Panel35.PerformLayout()
@@ -1342,4 +1393,8 @@ Partial Class scheduleform
     Friend WithEvents Label50 As Label
     Friend WithEvents prvbttn As Button
     Friend WithEvents nxtbttn As Button
+    Friend WithEvents refbtn As Button
+    Friend WithEvents taskpnl As Panel
+    Friend WithEvents clndrbtn As Button
+    Friend WithEvents MonthCalendar1 As MonthCalendar
 End Class
